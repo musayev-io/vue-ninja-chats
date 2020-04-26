@@ -1,5 +1,5 @@
 import firebase, { firestore } from 'firebase'
-// import firstore from 'firebase/firestore'
+import firstore from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
@@ -13,10 +13,10 @@ var firebaseConfig = {
   measurementId: "G-NWWPTPKZZW"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+// firebase.initializeApp(firebaseConfig);
+// firebase.analytics();
 
-const firebaseApp = firebase.initializeApp(config)
+const firebaseApp = firebase.initializeApp(firebaseConfig)
 
 
 export default firebaseApp.firestore()
